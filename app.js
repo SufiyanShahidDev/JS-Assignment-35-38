@@ -29,16 +29,50 @@
 
 // Answer3
 
-function addNumbers() {
+// function addNumbers() {
+//     var num1 = +prompt("Enter first number:");
+//     var num2 = +prompt("Enter second number:");
+
+//     var sum = num1 + num2;
+
+//     alert("Sum is: " + sum);
+//     console.log("Sum is:", sum);
+
+//     return sum;
+// }
+
+// addNumbers();
+
+// Answer4
+
+function calculator() {
     var num1 = +prompt("Enter first number:");
     var num2 = +prompt("Enter second number:");
+    var operator = prompt("Enter operator (+, -, *, /):");
 
-    var sum = num1 + num2;
+    var result;
 
-    alert("Sum is: " + sum);
-    console.log("Sum is:", sum);
+    if (operator === "+") {
+        result = num1 + num2;
+    }
+    else if (operator === "-") {
+        result = num1 - num2;
+    }
+    else if (operator === "*") {
+        result = num1 * num2;
+    }
+    else if (operator === "/") {
+        result = num1 / num2;
+    }
+    else {
+        alert("Invalid operator");
+        return;
+    }
 
-    return sum;
+    alert("Result is: " + result);
+    console.log("Result is:", result);
+
+    return result;
 }
 
-addNumbers();
+calculator();
