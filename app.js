@@ -79,15 +79,33 @@
 
 // Answer5
 
-function squareNumber() {
+// function squareNumber() {
+//     var num = +prompt("Enter a number:");
+
+//     var result = num * num;
+
+//     alert("Square of the number is: " + result);
+//     console.log("Square of the number is:", result);
+
+//     return result;
+// }
+
+// squareNumber();
+
+// Answer5
+
+function factorialNumber() {
     var num = +prompt("Enter a number:");
+    var factorial = 1;
 
-    var result = num * num;
+    for (var i = 1; i <= num; i++) {
+        factorial = factorial * i;
+    }
 
-    alert("Square of the number is: " + result);
-    console.log("Square of the number is:", result);
+    alert("Factorial is: " + factorial);
+    console.log("Factorial is:", factorial);
 
-    return result;
+    return factorial;
 }
 
-squareNumber();
+factorialNumber();
