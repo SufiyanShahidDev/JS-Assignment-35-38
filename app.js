@@ -45,34 +45,49 @@
 
 // Answer4
 
-function calculator() {
-    var num1 = +prompt("Enter first number:");
-    var num2 = +prompt("Enter second number:");
-    var operator = prompt("Enter operator (+, -, *, /):");
+// function calculator() {
+//     var num1 = +prompt("Enter first number:");
+//     var num2 = +prompt("Enter second number:");
+//     var operator = prompt("Enter operator (+, -, *, /):");
 
-    var result;
+//     var result;
 
-    if (operator === "+") {
-        result = num1 + num2;
-    }
-    else if (operator === "-") {
-        result = num1 - num2;
-    }
-    else if (operator === "*") {
-        result = num1 * num2;
-    }
-    else if (operator === "/") {
-        result = num1 / num2;
-    }
-    else {
-        alert("Invalid operator");
-        return;
-    }
+//     if (operator === "+") {
+//         result = num1 + num2;
+//     }
+//     else if (operator === "-") {
+//         result = num1 - num2;
+//     }
+//     else if (operator === "*") {
+//         result = num1 * num2;
+//     }
+//     else if (operator === "/") {
+//         result = num1 / num2;
+//     }
+//     else {
+//         alert("Invalid operator");
+//         return;
+//     }
 
-    alert("Result is: " + result);
-    console.log("Result is:", result);
+//     alert("Result is: " + result);
+//     console.log("Result is:", result);
+
+//     return result;
+// }
+
+// calculator();
+
+// Answer5
+
+function squareNumber() {
+    var num = +prompt("Enter a number:");
+
+    var result = num * num;
+
+    alert("Square of the number is: " + result);
+    console.log("Square of the number is:", result);
 
     return result;
 }
 
-calculator();
+squareNumber();
