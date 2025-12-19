@@ -92,20 +92,40 @@
 
 // squareNumber();
 
-// Answer5
+// Answer6
 
-function factorialNumber() {
-    var num = +prompt("Enter a number:");
-    var factorial = 1;
+// function factorialNumber() {
+//     var num = +prompt("Enter a number:");
+//     var factorial = 1;
 
-    for (var i = 1; i <= num; i++) {
-        factorial = factorial * i;
+//     for (var i = 1; i <= num; i++) {
+//         factorial = factorial * i;
+//     }
+
+//     alert("Factorial is: " + factorial);
+//     console.log("Factorial is:", factorial);
+
+//     return factorial;
+// }
+
+// factorialNumber();
+
+// Answer7
+
+function showCounting() {
+    var start = +prompt("Enter start number:");
+    var end = +prompt("Enter end number:");
+
+    var result = "";
+
+    for (var i = start; i <= end; i++) {
+        result = result + i + " ";
     }
 
-    alert("Factorial is: " + factorial);
-    console.log("Factorial is:", factorial);
+    alert("Counting:\n" + result);
+    console.log("Counting:", result);
 
-    return factorial;
+    return result;
 }
 
-factorialNumber();
+showCounting(); 
