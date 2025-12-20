@@ -132,22 +132,38 @@
 
 // Answer8
 
-function calculateHypotenuse() {
+// function calculateHypotenuse() {
 
-    var base = +prompt("Enter base:");
-    var perpendicular = +prompt("Enter perpendicular:");
+//     var base = +prompt("Enter base:");
+//     var perpendicular = +prompt("Enter perpendicular:");
 
-    function calculateSquare(num) {
-        return num * num;
-    }
+//     function calculateSquare(num) {
+//         return num * num;
+//     }
 
-    var hypotenuseSquared = calculateSquare(base) + calculateSquare(perpendicular);
-    var hypotenuse = Math.sqrt(hypotenuseSquared);
+//     var hypotenuseSquared = calculateSquare(base) + calculateSquare(perpendicular);
+//     var hypotenuse = Math.sqrt(hypotenuseSquared);
 
-    alert("Hypotenuse is: " + hypotenuse);
-    console.log("Hypotenuse is:", hypotenuse);
+//     alert("Hypotenuse is: " + hypotenuse);
+//     console.log("Hypotenuse is:", hypotenuse);
 
-    return hypotenuse;
+//     return hypotenuse;
+// }
+
+// calculateHypotenuse();
+
+// Answer9
+
+function calculateArea() {
+    var width = +prompt("Enter width of rectangle:");
+    var height = +prompt("Enter height of rectangle:");
+
+    var area = width * height;
+
+    alert("Area of rectangle is: " + area);
+    console.log("Area of rectangle is:", area);
+
+    return area;
 }
 
-calculateHypotenuse();
+calculateArea();
