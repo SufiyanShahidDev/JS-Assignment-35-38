@@ -154,16 +154,37 @@
 
 // Answer9
 
-function calculateArea() {
-    var width = +prompt("Enter width of rectangle:");
-    var height = +prompt("Enter height of rectangle:");
+// function calculateArea() {
+//     var width = +prompt("Enter width of rectangle:");
+//     var height = +prompt("Enter height of rectangle:");
 
-    var area = width * height;
+//     var area = width * height;
 
-    alert("Area of rectangle is: " + area);
-    console.log("Area of rectangle is:", area);
+//     alert("Area of rectangle is: " + area);
+//     console.log("Area of rectangle is:", area);
 
-    return area;
+//     return area;
+// }
+
+// calculateArea();
+
+// Answer10
+
+function checkPalindrome() {
+    var word = prompt("Enter a word:");
+    var reverseWord = "";
+
+    for (var i = word.length - 1; i >= 0; i--) {
+        reverseWord = reverseWord + word[i];
+    }
+
+    if (word === reverseWord) {
+        alert(word + " is a Palindrome");
+        console.log(word + " is a Palindrome");
+    } else {
+        alert(word + " is NOT a Palindrome");
+        console.log(word + " is NOT a Palindrome");
+    }
 }
 
-calculateArea();
+checkPalindrome();
