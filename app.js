@@ -170,21 +170,23 @@
 
 // Answer10
 
-function checkPalindrome() {
-    var word = prompt("Enter a word:");
-    var reverseWord = "";
+// function checkPalindrome() {
+//     var word = prompt("Enter a word:");
+//     var reverseWord = "";
 
-    for (var i = word.length - 1; i >= 0; i--) {
-        reverseWord = reverseWord + word[i];
-    }
+//     for (var i = word.length - 1; i >= 0; i--) {
+//         reverseWord = reverseWord + word[i];
+//     }
 
-    if (word === reverseWord) {
-        alert(word + " is a Palindrome");
-        console.log(word + " is a Palindrome");
-    } else {
-        alert(word + " is NOT a Palindrome");
-        console.log(word + " is NOT a Palindrome");
-    }
-}
+//     if (word === reverseWord) {
+//         alert(word + " is a Palindrome");
+//         console.log(word + " is a Palindrome");
+//     } else {
+//         alert(word + " is NOT a Palindrome");
+//         console.log(word + " is NOT a Palindrome");
+//     }
+// }
 
-checkPalindrome();
+// checkPalindrome();
+
+// Answer11
