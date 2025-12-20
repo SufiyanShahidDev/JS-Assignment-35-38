@@ -112,20 +112,42 @@
 
 // Answer7
 
-function showCounting() {
-    var start = +prompt("Enter start number:");
-    var end = +prompt("Enter end number:");
+// function showCounting() {
+//     var start = +prompt("Enter start number:");
+//     var end = +prompt("Enter end number:");
 
-    var result = "";
+//     var result = "";
 
-    for (var i = start; i <= end; i++) {
-        result = result + i + " ";
+//     for (var i = start; i <= end; i++) {
+//         result = result + i + " ";
+//     }
+
+//     alert("Counting:\n" + result);
+//     console.log("Counting:", result);
+
+//     return result;
+// }
+
+// showCounting(); 
+
+// Answer8
+
+function calculateHypotenuse() {
+
+    var base = +prompt("Enter base:");
+    var perpendicular = +prompt("Enter perpendicular:");
+
+    function calculateSquare(num) {
+        return num * num;
     }
 
-    alert("Counting:\n" + result);
-    console.log("Counting:", result);
+    var hypotenuseSquared = calculateSquare(base) + calculateSquare(perpendicular);
+    var hypotenuse = Math.sqrt(hypotenuseSquared);
 
-    return result;
+    alert("Hypotenuse is: " + hypotenuse);
+    console.log("Hypotenuse is:", hypotenuse);
+
+    return hypotenuse;
 }
 
-showCounting(); 
+calculateHypotenuse();
