@@ -210,21 +210,40 @@
 
 // Answer12
 
-function countLetter() {
-    var text = prompt("Enter a string:");
-    var letter = prompt("Enter a letter to count:");
-    var count = 0;
+// function countLetter() {
+//     var text = prompt("Enter a string:");
+//     var letter = prompt("Enter a letter to count:");
+//     var count = 0;
 
-    for (var i = 0; i < text.length; i++) {
-        if (text[i] === letter) {
-            count++;
-        }
-    }
+//     for (var i = 0; i < text.length; i++) {
+//         if (text[i] === letter) {
+//             count++;
+//         }
+//     }
 
-    alert("The letter '" + letter + "' occurs " + count + " times.");
-    console.log("The letter '" + letter + "' occurs " + count + " times.");
+//     alert("The letter '" + letter + "' occurs " + count + " times.");
+//     console.log("The letter '" + letter + "' occurs " + count + " times.");
 
-    return count;
+//     return count;
+// }
+
+// countLetter();
+
+// Answer13
+
+function calcCircumference(radius) {
+    var circumference = 2 * 3.142 * radius;
+    alert("The circumference is " + circumference);
+    console.log("The circumference is", circumference);
 }
 
-countLetter();
+function calcArea(radius) {
+    var area = 3.142 * radius * radius;
+    alert("The area is " + area);
+    console.log("The area is", area);
+}
+
+var r = +prompt("Enter radius of the circle:");
+
+calcCircumference(r);
+calcArea(r);
