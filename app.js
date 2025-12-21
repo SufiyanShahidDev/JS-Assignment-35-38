@@ -191,19 +191,40 @@
 
 // Answer11
 
-function capitalizeWords() {
-    var text = prompt("Enter a sentence:");
-    var words = text.split(" ");
-    var result = "";
+// function capitalizeWords() {
+//     var text = prompt("Enter a sentence:");
+//     var words = text.split(" ");
+//     var result = "";
 
-    for (var i = 0; i < words.length; i++) {
-        result = result + words[i].charAt(0).toUpperCase() + words[i].slice(1).toLowerCase() + " ";
+//     for (var i = 0; i < words.length; i++) {
+//         result = result + words[i].charAt(0).toUpperCase() + words[i].slice(1).toLowerCase() + " ";
+//     }
+
+//     alert("Result: " + result);
+//     console.log("Result:", result);
+
+//     return result;
+// }
+
+// capitalizeWords();
+
+// Answer12
+
+function countLetter() {
+    var text = prompt("Enter a string:");
+    var letter = prompt("Enter a letter to count:");
+    var count = 0;
+
+    for (var i = 0; i < text.length; i++) {
+        if (text[i] === letter) {
+            count++;
+        }
     }
 
-    alert("Result: " + result);
-    console.log("Result:", result);
+    alert("The letter '" + letter + "' occurs " + count + " times.");
+    console.log("The letter '" + letter + "' occurs " + count + " times.");
 
-    return result;
+    return count;
 }
 
-capitalizeWords();
+countLetter();
