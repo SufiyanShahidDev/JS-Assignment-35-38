@@ -190,3 +190,20 @@
 // checkPalindrome();
 
 // Answer11
+
+function capitalizeWords() {
+    var text = prompt("Enter a sentence:");
+    var words = text.split(" ");
+    var result = "";
+
+    for (var i = 0; i < words.length; i++) {
+        result = result + words[i].charAt(0).toUpperCase() + words[i].slice(1).toLowerCase() + " ";
+    }
+
+    alert("Result: " + result);
+    console.log("Result:", result);
+
+    return result;
+}
+
+capitalizeWords();
